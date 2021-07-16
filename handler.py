@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     strImageUrl = event['strImageUrl']
     strBio = event['strBio']
     myCursor = connection.cursor()
-    sql = "INSERT INTO tblUsers (strUserName,strAlias,strBio,strImageUrl) VALUES(%S,%S,%S,%S)"
+    sql = "INSERT INTO tblUsers (strUserName,strAlias,strBio,strImageUrl) VALUES(%s,%s,%s,%s)"
     val = (strUserName,strAlias,strBio,strImageUrl)
     myCursor.execute(sql,val)
     connection.commit()
