@@ -26,7 +26,7 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': json.dumps('User Added, ' + event['strUserName'])
+        'body': json.dumps('User Added: ' + event['strUserName'])
         }
     
     
