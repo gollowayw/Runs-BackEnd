@@ -1,2 +1,13 @@
 .env
 webserver.py
+boto*
+s3transfer*
+jme*
+python_dateu*
+urllib3*
+dateutil*
+six*
+node_modules
+bin
+boto3
+botocore
